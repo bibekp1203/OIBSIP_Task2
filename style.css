@@ -1,0 +1,409 @@
+@import 'utilities.css';
+
+:root {
+    --primary: rgb(111, 212, 210);
+    --bgDark: rgb(12, 12, 12);
+    --white: rgb(250, 250, 250);
+    --secondary: rgb(0, 59, 50);
+    --bgLight: rgb(190, 181, 181);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    background-color: var(--bgDark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);
+}
+
+header nav .left a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    /* text-transform: uppercase; */
+    transition: all .4s ease-in-out;
+}
+
+header nav .left a:hover {
+    color: var(--primary);
+    /* text-transform: uppercase; */
+    /* border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(118, 116, 66); */
+}
+
+header nav {
+    padding: 1rem 0;
+}
+
+header nav .logo {
+    margin-right: 3rem;
+}
+
+header nav .logo h2{
+    color: rgb(111, 212, 210);
+    font-size: 2rem;
+    font-weight: 700;   
+}
+
+header nav .logo h2::first-letter{
+    color:rgb(255, 255, 255) ;
+    font-size: 2.5rem;
+}
+header .container{
+    margin-left: 20px;
+}
+
+header nav .right{
+    justify-content: end;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* #imgLogo {
+    border-radius: 50px;
+} */
+
+.hero {
+    padding-top: 50px;
+    background-color: black;
+    padding-bottom: 3rem;
+}
+
+.hero .left img {
+    width: 100%;
+    padding: 10px 30px;
+    height: 40%;
+
+}
+
+.hero .right {
+    color: var(--white);
+    margin-top: -7rem;
+    padding: 0 20px;
+    margin: 0 40px;
+}
+
+.hero .right h2 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.hero .right h1 {
+    font-size: 5rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span {
+    color: var(--primary);
+}
+
+.hero .right p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.flex {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+    /* justify-content: none; */
+}
+
+.items-centre {
+    align-items: center;
+}
+
+/* .justify-between {
+    justify-content: space-between;
+} */
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-right {
+    justify-content: right;
+}
+
+.btn {
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 23px;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--secondary);
+    margin-top: -15rem;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: var(--secondary);
+}
+
+section {
+    padding: 5rem;
+}
+
+section.about h1 {
+    margin-bottom: 1px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+section.about h1::first-letter{
+    font-size: 3rem;
+    text-shadow: 2px 2px rgb(161, 160, 160);
+}
+
+section.about h1 span {
+    color: var(--primary);
+    font-size: 2.6rem;
+}
+
+section.about h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+section.about p {
+    font-family: 'Lato', sans-serif;
+    color: var(--secondary);
+    line-height: 1.9rem;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+section.about p::first-letter{
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+section.about .socials {
+    display: flex;
+}
+
+section.about img{
+    width: 600px;
+    margin-left: -130px;
+}
+section.about .socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    margin-right: 0.8rem;
+    border-radius: 50%;
+}
+
+section.about .socials a:hover {
+    background: var(--primary);
+}
+
+section.services {
+    background: rgb(17, 17, 17)
+}
+
+.services-head {
+    color: rgb(10, 9, 9);
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    line-height: 0.5rem;
+    color: var(--primary);
+}
+
+
+
+.services-head+p {
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 6rem;
+    font-weight: 400;
+}
+
+
+.card img {
+    width: 50px;
+    background: white;
+}
+
+section.services .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+
+section.services .card-grid .card-1 {
+    background: var(--white);
+    padding: 3rem 2rem;
+    background: url(./images/web.jpg);
+    color:#ffffff;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    opacity: 2 ;
+    transition: all .2s ease-in-out;
+}
+section.services .card-grid .card-1 h2{
+    margin-bottom: 20px;
+
+}
+
+section.services .card-grid :hover{
+    opacity:2 ;
+    cursor: pointer;
+    color:var(--primary);
+}
+
+section.services .card-grid .card-1 p{
+    font-weight: 600;
+}
+
+
+section.services .card-grid .card-2 {
+    background: var(--white);
+    padding: 3rem 2rem;
+    background: url(./images/pht.jpg);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    position: relative;
+    opacity: 2;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+section.services .card-grid .card-2 h2{
+    margin-bottom: 20px;
+
+}
+
+section.services .card-grid .card-2 p{
+    font-weight: 600;
+}
+
+section.services .card-grid :hover{
+    opacity:2 ;
+    cursor: pointer;
+    color:var(--primary);
+}
+section.services .card-grid .card-3 {
+    background: var(--white);
+    padding: 3rem 2rem;
+    background: url(./images/content.jpg);
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    transition: all .2s ease;
+}
+section.services .card-grid .card-3 h2{
+    margin-bottom: 20px;
+
+}
+
+section.services .card-grid .card-3 p{
+    font-weight: 600;
+}
+
+section.services .card-grid :hover{
+    opacity:2 ;
+    cursor: pointer;
+    color:var(--primary);
+}
+/* section.services .card-grid .card img {
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var();
+} */
+
+section.services .card-grid .card h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.services .card-grid .card p {
+    font-family: 'Lato', sans-serif;
+    color: var(--seconday);
+    line-height: 1.6;
+}
+
+section.services .card-grid .card:hover {
+    background: var(--primary);
+
+}
+
+section.services .card-grid .card:hover h2 {
+    color: var(--white);
+
+}
+
+section.services .card-grid .card:hover p {
+    color: var(--white);
+}
+
+footer{
+    display: flex;
+    background-color: rgb(41, 40, 40);
+    color: rgb(138, 219, 217);
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 30px;
+    height: 10vh;
+}
+
+footer a{
+    color: rgb(132, 209, 207);
+    transition: all .3s ease-in-out;
+}
+
+footer a:hover{
+    color: rgb(43, 139, 139);
+}
